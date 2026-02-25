@@ -1,32 +1,94 @@
+# ===============================
 # Python
+# ===============================
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.sqlite3
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 
-# Virtual environment
+# ===============================
+# Virtual Environment
+# ===============================
 venv/
-.env
+env/
+ENV/
+.venv/
 
+# ===============================
+# Environment Variables
+# ===============================
+.env
+.env.*
+!.env.example
+
+# ===============================
 # Django
+# ===============================
 *.log
 db.sqlite3
+db.sqlite3-journal
 media/
 staticfiles/
 
-# VSCode
+# Migrations cache
+**/__pycache__/
+
+# ===============================
+# IDE / Editors
+# ===============================
 .vscode/
+.idea/
+*.swp
+*.swo
 
-# Mac
+# ===============================
+# OS Files
+# ===============================
 .DS_Store
-
-# Windows
 Thumbs.db
+desktop.ini
 
-# Docker
-*.pid
-
-# Coverage
-htmlcov/
+# ===============================
+# Pytest / Coverage
+# ===============================
 .coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# ===============================
+# Docker
+# ===============================
+*.pid
+docker-compose.override.yml
+
+# ===============================
+# Node 
+# ===============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===============================
+# MyPy / Type Checking
+# ===============================
+.mypy_cache/
+.dmypy.json
+
+# ===============================
+# Ruff / Lint cache
+# ===============================
+.ruff_cache/
+
+# ===============================
+# Temporary files
+# ===============================
+*.tmp
+*.bak
+*.orig
